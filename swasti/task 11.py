@@ -16,7 +16,7 @@ def reverse_string(s):
     if len(s)== 1: 
         return s
     else:
-        return s[-1] + reverse_string(s[:-1])
+        return s[-1] + reverse_string(len(s[:-1]))
 
 word = input("enter a word: ")
 reverse = reverse_string(word)
@@ -37,4 +37,14 @@ print(palindrome)
 
 #recursive subroutine 4 
 
+def fib_recursive(n):
+    if n == 0: 
+        return 0
+    elif n == 1: 
+        return 1
+    else: 
+        return fib_recursive(n-1) + fib_recursive(n-2)
     
+n = int(input("enter a number: "))
+fibonacci = fib_recursive(n)
+print(fibonacci)
