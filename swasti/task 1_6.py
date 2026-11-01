@@ -1,0 +1,11 @@
+item_1 = input(" item 1 name: ")
+item_2 = input(" item 2 name: ")
+item_3 = input(" item 3 name: ")
+item_1_price = float(input(" item 1 price: "))
+item_2_price = float(input(" item 2 price: "))
+item_3_price = float(input(" item 3 price: "))
+total_price = item_1_price + item_2_price + item_3_price
+print(f"{item_1:15} £ {item_1_price:>7.2f}")
+print(f"{item_2:15} £ {item_2_price:>7.2f}")
+print(f"{item_3:15} £ {item_3_price:>7.2f}")
+print(f"{'Total:':15} £ {total_price:>7.2f}")
