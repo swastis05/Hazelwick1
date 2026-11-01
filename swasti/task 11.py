@@ -48,3 +48,6 @@ def fib_recursive(n):
 n = int(input("enter a number: "))
 fibonacci = fib_recursive(n)
 print(fibonacci)
+
+for i in range (15):
+    print(fib_recursive(i))

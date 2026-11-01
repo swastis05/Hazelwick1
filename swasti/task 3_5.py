@@ -8,10 +8,14 @@ if "python" in sentence.lower():
     python = True
 else:
     python = False
-for "e" in sentence.lower():
-    sentence = sentence.replace("e", "3")
-for "o" in sentence.lower():
-    sentence = sentence.replace("o", "0")
+
+for i in sentence.lower():
+     if i == "e":
+        sentence = sentence.replace("e", "3")
+
+for j in sentence.lower():
+     if j == "o":
+        sentence = sentence.replace("o", "0")
 
 print(number_of_words)
 print(first_word)
