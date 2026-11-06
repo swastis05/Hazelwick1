@@ -1,5 +1,6 @@
 #bubble sort 
 numbers = [64, 34, 25, 12, 22, 11, 90]
+passes = 0
 n = len(numbers)
 for i in range(n):
     for j in range (0, n-i-1):
@@ -8,5 +9,7 @@ for i in range(n):
             numbers[j] = numbers[j+1]
             numbers[j+1] = temp
             print(numbers)
+            passes = passes + 1
 
 print("the final sorted list is:", numbers)
+print("this was done in ", passes, "passes")
